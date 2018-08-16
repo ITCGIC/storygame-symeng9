@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    Button SignIn;
+    Button SignIn, Forgot,SignUp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,6 +16,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         SignIn = findViewById(R.id.bSignin);
         SignIn.setOnClickListener(this);
+
+        Forgot = findViewById(R.id.bForgot);
+        Forgot.setOnClickListener(this);
+
+        SignUp = findViewById(R.id.bSigup);
+        SignUp.setOnClickListener(this);
+
+
 
 
 
@@ -27,6 +35,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (view == SignIn){
             Intent i = new Intent(this, HorrorActivity.class);
             startActivity(i);
+        }
+
+        if (view == Forgot){
+            Intent forgot = new Intent(this, ForgotActivity.class);
+            startActivity(forgot);
+        }
+
+        if (view == SignUp){
+            Intent signup = new Intent(this, SignUpActivity.class);
+            startActivity(signup);
         }
     }
 }
