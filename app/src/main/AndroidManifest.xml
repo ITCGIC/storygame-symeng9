@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".HorrorActivity" />
         <activity android:name=".ForgotActivity" />
-        <activity android:name=".SignUpActivity"></activity>
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".OptionSignupActivity"></activity>
     </application>
 
 </manifest>
