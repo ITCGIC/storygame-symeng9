@@ -8,17 +8,14 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    Button Horror, Drama, Nervous;
+    Button SignIn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Horror = findViewById(R.id.bHorror);
-        Drama = findViewById(R.id.bDrama);
-        Nervous = findViewById(R.id.bNervous);
-
-        Horror.setOnClickListener(this);
+        SignIn = findViewById(R.id.bSignin);
+        SignIn.setOnClickListener(this);
 
 
 
@@ -27,7 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-        if (view == Horror){
+        if (view == SignIn){
             Intent i = new Intent(this, HorrorActivity.class);
             startActivity(i);
         }
