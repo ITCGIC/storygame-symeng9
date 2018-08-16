@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         if (view == SignIn){
-            Intent i = new Intent(this, HorrorActivity.class);
+            Intent i = new Intent(this, MapViewActivity.class);
             startActivity(i);
         }
 

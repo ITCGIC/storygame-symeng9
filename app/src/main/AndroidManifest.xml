@@ -19,7 +19,8 @@
         <activity android:name=".HorrorActivity" />
         <activity android:name=".ForgotActivity" />
         <activity android:name=".SignUpActivity" />
-        <activity android:name=".OptionSignupActivity"></activity>
+        <activity android:name=".OptionSignupActivity" />
+        <activity android:name=".MapViewActivity"></activity>
     </application>
 
 </manifest>
